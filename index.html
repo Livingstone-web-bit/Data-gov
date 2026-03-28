@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Catalog Clone</title>
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
 <!-----------------------------header starts here------------------------------------------------->
     <header>
+      <section id="section1">
+        <img src="images/us_flag_small.png" alt=" usa small flag" width="20px">
+        <p>An official website of the United States government <a href="#">Here's how you know</a></p>
+      </section>
         <nav id="navbar">
             <ul id="list-items">
             <img src="images/usadev.PNG" alt="American flag with discription" id="usaimg">
-                <i class="fa fa-Home"></i>
-                <li><a href="">DATA</a></li>
-                <li><a href="">METRICS</a></li>
-                <li><a href="">OPEN GOVERNMENT</a></li>
-                <li><a href="">CONTACT</a></li>
+             <section id="main-nav">
+                <li><a href="" class="nav-items active">DATA</a></li>
+                <li><a href="" class="nav-items">METRICS</a></li>
+                <li><a href="" class="nav-items">OPEN GOVERNMENT</a></li>
+                <li><a href="" class="nav-items">CONTACT</a></li>
+            </section>
+                <section id="book">
+                <i class="fa-solid fa-book-open" ></i>
+                <span id="guide-text">User Guide</span>
+                </sectio .n>
             </ul>
         </nav>
 <!-----------------------------header ends here------------------------------------------------->
 <!-----------------------------Data catalog starts here------------------------------------------------->
 <section id="data-catalog">
-<p id="data-catalog-p">Try the next &#45 generation Data catalog at <a href="#">catalog &#45 beta.data.gov</a> and help shape it with
+<p id="data-catalog-p">
+    <i class="fa-solid fa-info-circle" ></i>Try the next &#45 generation Data catalog at <a href="#">catalog &#45 beta.data.gov</a> and help shape it with
  your feedback. </p>
  </section>
  <!-----------------------------Data catalog ends here------------------------------------------------->
@@ -34,8 +44,10 @@
     </Section>
     <menu>
      <ul id="nav-tabs">
-        <li id="active"> <a href="#">Datasets</a></li>
-        <li> <a href="#">Organizations</a></li>
+        <span id="fa-home"><i class="fa fa-home" ></i></span>
+        <span id="divider">/</span>
+        <li id="underline" > <a href="#">Datasets</a></li>
+        <li id="active-tab"> <a href="#">Organizations</a></li>
      </ul>
     </menu>
  </section>
@@ -50,7 +62,9 @@
         <section id="all">
         <section id="form-data">
             <section id="form-container">
-                <form role="search" id="search-form"><input type="search" placeholder="Search dataset......."/>
+                <form role="search" id="search-form"><input type="search"  placeholder="Search dataset ......."/>
+                    
+                    
       </form>
             </section>
     <section id="options">
@@ -90,26 +104,26 @@
         <section>
             <h3>Dataset Type</h3>
             <ul>
-                <li>geospatial &#45 <data value="64840">64840</data></li>
+                <li id="line">geospatial &#45 <data id="value" value="64840">64840</data></li>
             </ul>
         </section>
         <section>
             <h3>Tags</h3>
             <ul>
-                <li>&#45 <data value="16">16</data></li>
-                <li>State flip code &#45<data value="16">16</data></li>
+                <li id="line">&#45 <data id="value" value="16">16</data></li>
+                <li id="line">State flip code &#45<data id="value" value="16">16</data></li>
             </ul>
         </section>
         <section>
             <h3>State gnis code -16</h3>
             <ul>
-              <li>United state &#45<data value="16">16</data></li>
-              <li>County fips code &#45<data value="13">16</data></li>
-              <li>county gnis code &#45<data value="12">12</data></li>
-              <li>permanent edge id &#45<data value="11">11</data></li>
-              <li>US &#45<data value="10">10</data></li>
-              <li>5-digit zip code <data value="9">9</data></li>
-              <li>From house number &#45<data value="9">9</data></li>
+              <li id="line">United state &#45<data id="value" value="16">16</data></li>
+              <li id="line">County fips code &#45<data id="value" value="13">16</data></li>
+              <li id="line">county gnis code &#45<data id="value" value="12">12</data></li>
+              <li id="line">permanent edge id &#45<data id="value"value="11">11</data></li>
+              <li id="line">US &#45<data  id="value"value="10">10</data></li>
+              <li id="line">5-digit zip code <data id="value" value="9">9</data></li>
+              <li id="line">From house number &#45<data id="value" value="9">9</data></li>
             </ul>
             <button>Show More Tags</button>
         </section>
@@ -117,21 +131,21 @@
         <Section>
             <h3>Formats</h3>
         <ul>
-            <li>HTML &#45 16</li>
-            <li>XML &#45 16</li>
-            <li>PDF &#45 1</li>
+            <li id="line">HTML &#45 <span id="value">16</span></li>
+            <li id="line">XML &#45 <span id="value">16</span></li>
+            <li id="line">PDF &#45 <span id="value">1</span></li>
         </ul>
         </Section>
         <section>
             <h3>Organization Types</h3>
             <ul>
-                <li>Federal Government &#45</li>
+                <li id="line">Federal Government &#45</li>
             </ul>
         </section>
         <section>
             <h3>Organizations</h3>
             <ul>
-                <li>US Census... &#45 16</li>
+                <li id="line">US Census... &#45 16</li>
             </ul>
         </section>
         <section>
@@ -374,6 +388,21 @@
                 <div id="ribbon">Federal</div>
              </div>
         </article>
+         <section id="pagination-container">
+        <section id="pagination">
+           <a href="#">&laquo;</a>
+           <a href="#" id="passive">1</a>
+           <a href="#"> 2</a>
+           <a href="#">3</a>
+           <span>...</span>
+           <a href="#">3242</a>
+           <a href="#">&raquo</a>
+        </section>
+        </section>
+        <p id="result">64,840 datasets found</p>
+        <p id="api-doc1">You can also access this registry using the <a href="#"> API</a>
+             (see <a href="#">API Docs</a>).</p>
+        <p id="api-doc2">Didn't find what you're looking for? Suggest a dataset <a href="#">here.</a></p>
      </section>
     </section>
  </section>
@@ -388,21 +417,27 @@
     </section>
     <section id="container2">
         <section id="img-nav">
-    <section id="usa-img">
+    <section id="usa-img2">
         <img src="images/usadev.PNG" alt=" american flag">
-    </section>
-    </section>
-    <section id="social-link">
-       <a href="#">Twitter</a>
-       <a href="#">Github</a>
+        <section id="social-link">
+       <a href="#"> <i class="fa-brands fa-twitter"></i>Twitter</a> <br>
+       <span id="github"><a href="#"> <i class="fa-brands fa-github"></i>Github</a></span>
 </section>
+    </section>
+    </section>
+    
     <section>
         <nav id="utility-nav">
            <a href="#">About</a>
+           <span id="divider2">|</span>
            <a href="#">Open Government</a>
+           <span id="divider2">|</span>
            <a href="#">Website Policies</a>
+           <span id="divider2">|</span>
            <a href="#">Site Map</a>
+           <span id="divider2">|</span>
            <a href="#">PERFORMANCE.GOV</a>
+           <span id="divider2">|</span>
            <a href="#">Login</a>
         </nav>
     </section>
@@ -420,28 +455,26 @@
     </section>
     <section id="footer-link">
          <section id="column">
-           <a href="#">About GSA</a>
-           <a href="#">Accessibility statement</a>
+           <a href="#">About GSA <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           <a href="#">Accessibility statement <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
          </section>
          <section id="column">
-           <a href="#">FOIA requests</a>
-           <a href="#">No FEAR Act data</a>
+           <a href="#">FOIA requests<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           <a href="#">No FEAR Act data<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
          </section>
          <section id="column">
-           <a href="#">Office of the Inspector General</a>
-           <a href="#">Performance reports</a>
+           <a href="#">Office of the Inspector General <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           <a href="#">Performance reports <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
          </section>
          <section id="column">
-           <a href="#">Privacy policy</a>
+           <a href="#">Privacy policy<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
          </section>
     <section id="footer-bottom">
       <p> looking for U.S government information and services
-        <a href="#">Visit USA.gov </a>
+        <a href="#">Visit USA.gov <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       </p>
     </section>
     <section id="socials">
-      <a href="#">Twitter</a>
-      <a href="#"></a>
     </section>
     </section>
     </section>
